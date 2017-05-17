@@ -10,6 +10,7 @@ import com.tangce.fastcode.model.LoginResponse;
 import com.tangce.fastcode.model.ModifyUserPhotoResponse;
 import com.tangce.fastcode.network.FastHttp;
 import com.tangce.fastcode.presenter.MainPresenter;
+import com.tangce.fastcode.routerlib.Router;
 import com.tangce.fastcode.utils.LogUtils;
 
 import java.io.File;
@@ -45,7 +46,7 @@ public class MainActivity extends BaseActivity<MainPresenter, Object>  {
         mPresenter.start(LoginApi.login(param));
 
 
-//        Router.create("Tanck://login").open(MainActivity.this);
+        Router.create("Tanck://login").open(MainActivity.this);
     }
 
 
